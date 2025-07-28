@@ -1,6 +1,6 @@
-package pessoa;
+package educacional;
 
-public class Aluno {
+public class Monitoria {
     public static void main(String[] args) {
 
     }

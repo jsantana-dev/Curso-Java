@@ -1,6 +1,6 @@
-package pessoa;
+package administracao;
 
-public class Aluno {
+public class RH {
     public static void main(String[] args) {
 
     }
