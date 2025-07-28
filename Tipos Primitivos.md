@@ -10,7 +10,7 @@ Objeto que represente uma data
 
 Int = dia
 
-Int = mês 
+Int = mês
 
 Int = ano
 
@@ -34,7 +34,7 @@ Suportam pontos flutuantes, ou seja, números quebrados.
 
 
 
-**Os 2 últimos: Char e Boolean**
+Os 2 últimos: **Char e Boolean**
 
 Char é um caractere delimitado por aspas simples | ex.: '1', 'a', '#'
 
