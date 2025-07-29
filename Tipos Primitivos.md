@@ -48,3 +48,61 @@ Aspas duplas -> String
 
 Sem aspas -> número literal
 
+
+
+-----Operadores
+
+**Unários, Binários e Ternário**
+
+
+
+Unários só possuem apenas um operando.
+
+Exemplo:a**++** //incrementação, soma 1 ao valor da variável
+
+
+
+Binários possuem dois operandos.
+
+Exemplo: 3**+**2
+
+
+
+Ternário é composto por 2 operadores e 3 operandos
+
+Exemplo: **x ?** y **:** z
+
+
+
+Aritméticos
+
+Relacionais
+
+Lógicos
+
+Atribuição (condicional)
+
+
+
+-----Tabela Verdade
+
+
+
+para uma expressão "e" ser V, todas as sentenças precisam ser V;
+
+para uma expressão "ou" ser V, pelo menos uma sentença precisa ser V;
+
+para uma expressão "xor^" ser V, apenas uma sentença pode ser V;
+
+
+
+Expressão "not!"
+
+Exemplo: !true = false || !false = true
+
+
+
+
+
+
+
