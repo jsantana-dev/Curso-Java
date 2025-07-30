@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.primitivos;
 
 public class NotacaoPonto {
     public static void main(String[] args) {
