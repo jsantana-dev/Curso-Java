@@ -1,4 +1,4 @@
-package Fundamentos.primitivos;
+package Fundamentos.desafios;
 
 import java.util.Scanner;
 

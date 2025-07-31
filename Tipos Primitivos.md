@@ -1,4 +1,4 @@
-Tipos Primitivos de Java (8)
+-----Tipos Primitivos de Java (8)
 
 
 
@@ -47,6 +47,42 @@ Aspas simples -> char
 Aspas duplas -> String
 
 Sem aspas -> número literal
+
+
+
+-----Operadores
+
+**Unários, Binários, Ternário**
+
+
+
+Unários só possuem apenas um operando.
+
+Exemplo:a**++** //incrementação, soma +1 ao valor da variável.
+
+
+
+Binários possuem dois operandos.
+
+Exemplo: 3**+**2 
+
+
+
+Ternário é composto por 2 operadores e 3 operandos
+
+Exemplo: x **?** y **:** z
+
+
+
+Aritméticos 
+
+Relacionais  
+
+Lógicos 
+
+Atribuição (condicional)
+
+
 
 
 
