@@ -6,8 +6,8 @@ public class WhileDeterminado {
         int contador = 1;
 
         while (contador <= 10) {
-            System.out.println("Bom dia!");
-            contador++;
+            System.out.printf("i = %d\n", contador);
+            contador += 2;
         }
     }
 }
