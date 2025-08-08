@@ -27,10 +27,23 @@ public class SwitchSemBreak {
             case "branca":
                 System.out.println("Aprende disciplina, postura básica e primeiros comandos.");
                 break;
-            /*default:
-                System.out.println("Não sei nada.");*/
-
+            default:
+                System.out.println("Não sei nada.");
             }
+
+        System.out.println("Fim!");
+
+        int idade = 2;
+
+        switch (idade) {
+            case 3:
+                System.out.println("Sabe programar.");
+            case 2:
+                System.out.println("Sabe falar.");
+            case 1:
+                System.out.println("Sabe andar.");
+            case 0:
+                System.out.println("Sabe respirar.");
         }
     }
-
+}
