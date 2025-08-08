@@ -11,24 +11,32 @@ public class DesafioWhile {
         double nota = 0;
         double total = 0;
 
-        while (nota != -1) {
+        while (nota != -1) { // lê-se: enquanto nota for diferente de -1, execute o bloco de código
             System.out.print("Informe a nota: ");
             nota = entrada.nextDouble();
 
             if (nota <= 10 && nota >= 0) {
-                total += nota;
+                total += nota; // total = total + nota
                 qtdDeNotas++;
+            } else if (nota != -1) { //lê-se: senão, se
+                System.out.println("Nota inválida!!!");
             }
-
-            double media = total / qtdDeNotas;
-            System.out.println("Média = " + media);
-
-
-            entrada.close();
         }
-    }
 
+        if (qtdDeNotas > 0) {
+            double media = total / qtdDeNotas;
+            System.out.println("\n-----Resultado-----");
+            System.out.printf("Total de notas (soma) = %.2f ", total);
+            System.out.println("Quantidade de notas = " + qtdDeNotas);
+            System.out.printf("Média = %.2f ", media);
+        } else {
+            System.out.println("Nenhuma nota válida foi informada.");
+        }
+
+        entrada.close();
     }
+}
+
 
 /* desafio em java com apenas fundamentos básicos e estruturas de controle:
  calcular a média das notas de uma turma
@@ -41,10 +49,9 @@ de forma que total armazene a soma de todas as notas
 uma nota válida: 1
 segunda nota válida: 2
 
-sistema tem que mostra o total, a qtd de notas digitadas e média
+sistema tem que mostrar o total, a qtd de notas digitadas e média
 e um sinal para sair do programa: -1
 
 se digitar uma nota inválida, informe que está errado e
 peça pra digitar uma nota válida
-
  */
