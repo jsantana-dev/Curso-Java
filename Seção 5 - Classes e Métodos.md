@@ -1,4 +1,4 @@
-Seção 5 - Classes e Métodos
+**Seção 5 - Classes e Métodos**
 
 
 
@@ -24,17 +24,17 @@ Classe define {} bloco de código
 
 public class Produto {
 
-&nbsp;	public static void main (String\[] args) { --> bloco de código
+ 	public static void main (String\[] args) { --> bloco de código
 
 
 
-&nbsp;	}
+ 	}
 
 }
 
 
 
-Classe vs Objeto #01
+**Classe vs Objeto #01**
 
 
 
@@ -42,13 +42,13 @@ Anatomia de uma classe
 
 class Nome {
 
-&nbsp;	//corpo (conteúdo)
+ 	//corpo (conteúdo)
 
 }
 
 
 
-pode haver variações antes de class e depois de Nome 
+pode haver variações antes de class e depois de Nome
 
 corpo:
 
@@ -58,4 +58,197 @@ corpo:
 
 
 são chamados de membros
+
+
+
+**Classe vs Objeto #02**
+
+
+
+* Classe define um tipo e um tipo é uma estrutura de dados, ou seja, classe é uma estrutura de dados.
+* Classe representa uma simplificação.
+* Os dados criados a partir das classes são chamados de objetos.
+* Objeto == instância.
+
+
+
+**Membros de uma Classe**
+
+
+
+Tudo que declaramos dentro do corpo da classe (dentro das chaves{}). Ou seja, dentro dos blocos de construção é chamado de membro.
+
+
+
+* Os blocos de construção que define o que a classe sabe (dados/atributos) e o que ela sabe fazer (métodos).
+
+
+
+**Atributos ou Métodos podem pertencer à instância (objeto) ou à classe.**
+
+
+
+**Atributos**
+
+São as variáveis que armazenam os dados (o estado) de um objeto ou de uma classe.
+
+
+
+* Atributos de Objetos:
+
+
+
+Cada objeto criado a partir de uma classe terá sua própria cópia desses atributos.
+
+Se você criar dois objetos *Produto*, cada um terá seu próprio *nome* e *preco*. Mudar o preço de um não afeta o outro.
+
+
+
+Ex.:
+
+public class Produto {
+
+&nbsp;	String nome; // atributo de objeto
+
+&nbsp;	double preco; // ""
+
+&nbsp;	double desconto; // ""
+
+}
+
+
+
+* Atributos de Classes (Atributos Estáticos/*static*):
+
+
+
+1. São declarados com a palavra-chave *static*;
+2. Existe apenas uma cópia desse atributo, que é compartilhada por todos os objetos daquela classe. Ele pertence à classe em si.
+3. É ideal para valores constantes ou dados que devem ser os mesmos para todas as instâncias.
+
+
+
+Ex.:
+
+public class Produto {
+
+&nbsp;	String nome;
+
+&nbsp;	double preco;
+
+
+
+&nbsp;	//Este valor é o mesmo para **TODOS** os produtos.
+
+&nbsp;	static double FATOR\_IMPOSTO = 0.08; //atributo de classe
+
+
+
+**Métodos**
+
+São blocos de código que definem comportamentos e ações que um objeto ou classe pode executar.
+
+
+
+* Métodos de Objeto:
+
+
+
+1. Operam sobre um objeto específico. 
+2. Eles podem ler e modificar os atributos de instância daquele objeto.
+3. A maioria dos métodos que você vai criar será de instância.
+
+
+
+Ex.:
+
+public class Produto {
+
+&nbsp;	String nome;
+
+&nbsp;	double preco;
+
+
+
+&nbsp;	//Método de instância: calcula o preço com desconto **para este** produto.
+
+&nbsp;	double precoComDesconto(double desconto) {
+
+&nbsp;	return preco \* (1 - desconto);
+
+&nbsp;	}
+
+}
+
+
+
+
+
+* Métodos de Classes (Métodos Estáticos/*static*).
+
+
+
+1. São declarados com a palavra-chave *static*.
+2. Pertencem à uma classe. Para chamá-los você (geralmente) usa o nome da classe (*Produto.metodoEstatico()*)
+3. **NÃO PODEM** acessar atributos de objetos, pois não estão associados a nenhum objeto em particular. Só podem acessar outros membros estáticos.
+4. O método *main* é o exemplo mais comum. Ele precisa ser *static* para que a JVM possa executá-lo sem precisar criar um objeto da sua classe primeiro.
+
+
+
+Ex.:
+
+public class Produto {
+
+&nbsp;	//.. atributos
+
+
+
+&nbsp;	// Método estático: uma função utilitária que pertence à classe.
+
+&nbsp;	static void manualProduto() {
+
+&nbsp;	System.out.println("Esse é o manual geral para todos os produtos.");
+
+&nbsp;	}
+
+}
+
+
+
+**Construtores**
+
+Os construtores são considerados membros especiais de uma classe.
+
+
+
+1. É um bloco de código especial usado para criar e inicializar um objeto.
+2. Ele tem o mesmo nome da classe e não possui tipo de retorno (nem mesmo *void*).
+
+
+
+Ex.:
+
+public class Produto {
+
+&nbsp;	String nome;
+
+&nbsp;	double preco;
+
+
+
+&nbsp;	// Construtor: usado para criar um objeto Produto já com nome e preço.
+
+&nbsp;	Produto(String nomeInicial, double precoInicial) {
+
+&nbsp;		nome = nomeInicial;
+
+&nbsp;		preco = precoInicial;
+
+&nbsp;	}
+
+}
+
+
+
+
 
