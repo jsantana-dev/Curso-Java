@@ -1,4 +1,4 @@
-package Fundamentos.controle;
+package Controle;
 
 public class For3 {
     public static void main(String[] args) {

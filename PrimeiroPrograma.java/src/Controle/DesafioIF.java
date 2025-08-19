@@ -1,4 +1,4 @@
-package Fundamentos.controle;
+package Controle;
 
 public class DesafioIF {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package Fundamentos.controle;
+package Controle;
 
-public class BreakRotulado {
+public class ContinueRotulado {
 
     public static void main(String[] args) {
 
@@ -11,13 +11,10 @@ public class BreakRotulado {
                 if (i == 1) {
                     break externo;
                 }
-
                 System.out.printf("%d %d", i, j);
             }
-
             System.out.println();
         }
-
         System.out.println("Fim!");
     }
 }

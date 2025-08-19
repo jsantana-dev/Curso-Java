@@ -4,9 +4,9 @@
 
 .java -> Produto.java (arquivo fica dentro de um pacote)
 
-Produto.java -> public class Produto {} = classe pública, tem que ter o mesmo nome do arquivo
+Produto.java -> public class Produto {} = Classe pública, tem que ter o mesmo nome do arquivo
 
-o nome influencia desde que a classe seja pública
+o nome influencia desde que a Classe seja pública
 
 
 
@@ -14,7 +14,7 @@ o nome influencia desde que a classe seja pública
 
 Programa real:
 
-Escolha uma classe para colocar dentro de outra classe com método main. (Porta de entradada do programa)
+Escolha uma Classe para colocar dentro de outra Classe com método main. (Porta de entradada do programa)
 
 Todas as outras classes não terão método main.
 
@@ -38,7 +38,7 @@ public class Produto {
 
 
 
-Anatomia de uma classe
+Anatomia de uma Classe
 
 class Nome {
 
@@ -65,7 +65,7 @@ são chamados de membros
 
 
 
-* Classe define um tipo e um tipo é uma estrutura de dados, ou seja, classe é uma estrutura de dados.
+* Classe define um tipo e um tipo é uma estrutura de dados, ou seja, Classe é uma estrutura de dados.
 * Classe representa uma simplificação.
 * Os dados criados a partir das classes são chamados de objetos.
 * Objeto == instância.
@@ -76,21 +76,21 @@ são chamados de membros
 
 
 
-Tudo que declaramos dentro do corpo da classe (dentro das chaves{}). Ou seja, dentro dos blocos de construção é chamado de membro.
+Tudo que declaramos dentro do corpo da Classe (dentro das chaves{}). Ou seja, dentro dos blocos de construção é chamado de membro.
 
 
 
-* Os blocos de construção que define o que a classe sabe (dados/atributos) e o que ela sabe fazer (métodos).
+* Os blocos de construção que define o que a Classe sabe (dados/atributos) e o que ela sabe fazer (métodos).
 
 
 
-**Atributos ou Métodos podem pertencer à instância (objeto) ou à classe.**
+**Atributos ou Métodos podem pertencer à instância (objeto) ou à Classe.**
 
 
 
 **Atributos**
 
-São as variáveis que armazenam os dados (o estado) de um objeto ou de uma classe.
+São as variáveis que armazenam os dados (o estado) de um objeto ou de uma Classe.
 
 
 
@@ -98,7 +98,7 @@ São as variáveis que armazenam os dados (o estado) de um objeto ou de uma clas
 
 
 
-Cada objeto criado a partir de uma classe terá sua própria cópia desses atributos.
+Cada objeto criado a partir de uma Classe terá sua própria cópia desses atributos.
 
 Se você criar dois objetos *Produto*, cada um terá seu próprio *nome* e *preco*. Mudar o preço de um não afeta o outro.
 
@@ -123,7 +123,7 @@ public class Produto {
 
 
 1. São declarados com a palavra-chave *static*;
-2. Existe apenas uma cópia desse atributo, que é compartilhada por todos os objetos daquela classe. Ele pertence à classe em si.
+2. Existe apenas uma cópia desse atributo, que é compartilhada por todos os objetos daquela Classe. Ele pertence à Classe em si.
 3. É ideal para valores constantes ou dados que devem ser os mesmos para todas as instâncias.
 
 
@@ -140,13 +140,13 @@ public class Produto {
 
 &nbsp;	//Este valor é o mesmo para **TODOS** os produtos.
 
-&nbsp;	static double FATOR\_IMPOSTO = 0.08; //atributo de classe
+&nbsp;	static double FATOR\_IMPOSTO = 0.08; //atributo de Classe
 
 
 
 **Métodos**
 
-São blocos de código que definem comportamentos e ações que um objeto ou classe pode executar.
+São blocos de código que definem comportamentos e ações que um objeto ou Classe pode executar.
 
 
 
@@ -189,9 +189,9 @@ public class Produto {
 
 
 1. São declarados com a palavra-chave *static*.
-2. Pertencem à uma classe. Para chamá-los você (geralmente) usa o nome da classe (*Produto.metodoEstatico()*)
+2. Pertencem à uma Classe. Para chamá-los você (geralmente) usa o nome da Classe (*Produto.metodoEstatico()*)
 3. **NÃO PODEM** acessar atributos de objetos, pois não estão associados a nenhum objeto em particular. Só podem acessar outros membros estáticos.
-4. O método *main* é o exemplo mais comum. Ele precisa ser *static* para que a JVM possa executá-lo sem precisar criar um objeto da sua classe primeiro.
+4. O método *main* é o exemplo mais comum. Ele precisa ser *static* para que a JVM possa executá-lo sem precisar criar um objeto da sua Classe primeiro.
 
 
 
@@ -203,7 +203,7 @@ public class Produto {
 
 
 
-&nbsp;	// Método estático: uma função utilitária que pertence à classe.
+&nbsp;	// Método estático: uma função utilitária que pertence à Classe.
 
 &nbsp;	static void manualProduto() {
 
@@ -217,12 +217,12 @@ public class Produto {
 
 **Construtores**
 
-Os construtores são considerados membros especiais de uma classe.
+Os construtores são considerados membros especiais de uma Classe.
 
 
 
 1. É um bloco de código especial usado para criar e inicializar um objeto.
-2. Ele tem o mesmo nome da classe e não possui tipo de retorno (nem mesmo *void*).
+2. Ele tem o mesmo nome da Classe e não possui tipo de retorno (nem mesmo *void*).
 
 
 
