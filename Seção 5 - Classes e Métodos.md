@@ -108,11 +108,11 @@ Ex.:
 
 public class Produto {
 
-&nbsp;	String nome; // atributo de objeto
+ 	String nome; // atributo de objeto
 
-&nbsp;	double preco; // ""
+ 	double preco; // ""
 
-&nbsp;	double desconto; // ""
+ 	double desconto; // ""
 
 }
 
@@ -132,15 +132,15 @@ Ex.:
 
 public class Produto {
 
-&nbsp;	String nome;
+ 	String nome;
 
-&nbsp;	double preco;
+ 	double preco;
 
 
 
-&nbsp;	//Este valor é o mesmo para **TODOS** os produtos.
+ 	//Este valor é o mesmo para **TODOS** os produtos.
 
-&nbsp;	static double FATOR\_IMPOSTO = 0.08; //atributo de Classe
+ 	static double FATOR\_IMPOSTO = 0.08; //atributo de Classe
 
 
 
@@ -154,7 +154,7 @@ São blocos de código que definem comportamentos e ações que um objeto ou Cla
 
 
 
-1. Operam sobre um objeto específico. 
+1. Operam sobre um objeto específico.
 2. Eles podem ler e modificar os atributos de instância daquele objeto.
 3. A maioria dos métodos que você vai criar será de instância.
 
@@ -164,19 +164,19 @@ Ex.:
 
 public class Produto {
 
-&nbsp;	String nome;
+ 	String nome;
 
-&nbsp;	double preco;
+ 	double preco;
 
 
 
-&nbsp;	//Método de instância: calcula o preço com desconto **para este** produto.
+ 	//Método de instância: calcula o preço com desconto **para este** produto.
 
-&nbsp;	double precoComDesconto(double desconto) {
+ 	double precoComDesconto(double desconto) {
 
-&nbsp;	return preco \* (1 - desconto);
+ 	return preco \* (1 - desconto);
 
-&nbsp;	}
+ 	}
 
 }
 
@@ -199,17 +199,17 @@ Ex.:
 
 public class Produto {
 
-&nbsp;	//.. atributos
+ 	//.. atributos
 
 
 
-&nbsp;	// Método estático: uma função utilitária que pertence à Classe.
+ 	// Método estático: uma função utilitária que pertence à Classe.
 
-&nbsp;	static void manualProduto() {
+ 	static void manualProduto() {
 
-&nbsp;	System.out.println("Esse é o manual geral para todos os produtos.");
+ 	System.out.println("Esse é o manual geral para todos os produtos.");
 
-&nbsp;	}
+ 	}
 
 }
 
@@ -230,25 +230,29 @@ Ex.:
 
 public class Produto {
 
-&nbsp;	String nome;
+ 	String nome;
 
-&nbsp;	double preco;
+ 	double preco;
 
 
 
-&nbsp;	// Construtor: usado para criar um objeto Produto já com nome e preço.
+ 	// Construtor: usado para criar um objeto Produto já com nome e preço.
 
-&nbsp;	Produto(String nomeInicial, double precoInicial) {
+ 	Produto(String nomeInicial, double precoInicial) {
 
-&nbsp;		nome = nomeInicial;
+ 		nome = nomeInicial;
 
-&nbsp;		preco = precoInicial;
+ 		preco = precoInicial;
 
-&nbsp;	}
+ 	}
 
 }
 
 
+
+**Métodos #01**
+
+São os comportamentos de uma classe. Blocos de código nomeados que executam uma ação ou uma tarefa específica, tem como principal função agrupar lógica para que ela possa ser reutilizada, evitando repetição.
 
 
 
