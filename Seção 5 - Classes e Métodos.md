@@ -34,7 +34,7 @@ public class Produto {
 
 
 
-**Classe vs Objeto #01**
+**Classe vs Objeto #0116:27 25/08/2025**
 
 
 
@@ -253,6 +253,39 @@ public class Produto {
 **Métodos #01**
 
 São os comportamentos de uma classe. Blocos de código nomeados que executam uma ação ou uma tarefa específica, tem como principal função agrupar lógica para que ela possa ser reutilizada, evitando repetição.
+
+
+
+Ex.: 
+
+String s = "texto";
+
+s.toUpperCase(); //é um **método**
+
+
+
+
+
+**\*DETALHE - Tudo que chamamos depois de . é um membro daquele objeto, mas:**
+
+
+
+Os métodos sempre terminam com parênteses, mesmo que não recebam nada. Porque estamos dando uma **ação** para o objeto fazer alguma coisa.
+
+
+
+Ex.: 
+
+* s.toUpperCase();
+* s.length();
+
+
+
+Sem os parênteses, se tornam atributos. Estará **apenas acessando** o dado, uma informação guardada dentro do objeto.
+
+
+
+Ex.:
 
 
 
