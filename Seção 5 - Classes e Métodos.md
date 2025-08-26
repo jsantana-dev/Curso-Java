@@ -34,7 +34,7 @@ public class Produto {
 
 
 
-**Classe vs Objeto #0116:27 25/08/2025**
+**Classe vs Objeto #01**
 
 
 
@@ -256,7 +256,7 @@ São os comportamentos de uma classe. Blocos de código nomeados que executam um
 
 
 
-Ex.: 
+Ex.:
 
 String s = "texto";
 
@@ -274,7 +274,7 @@ Os métodos sempre terminam com parênteses, mesmo que não recebam nada. Porque
 
 
 
-Ex.: 
+Ex.:
 
 * s.toUpperCase();
 * s.length();
@@ -286,6 +286,4 @@ Sem os parênteses, se tornam atributos. Estará **apenas acessando** o dado, um
 
 
 Ex.:
-
-
 
