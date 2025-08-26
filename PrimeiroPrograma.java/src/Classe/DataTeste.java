@@ -8,14 +8,14 @@ public class DataTeste {
         d1.mes = 9;
         d1.ano = 2023;
 
-        System.out.printf("%02d/%02d/%d\n", d1.dia,d1.mes,d1.ano);
+        System.out.println(d1.dataFormatada());
 
         Data d2 = new Data(); //funciona perfeitamente com var d2 = new Data();
         d2.dia = 5;
         d2.mes = 2;
         d2.ano = 2024;
 
-        System.out.printf("%02d/%02d/%d", d2.dia,d2.mes,d2.ano);
+        System.out.println(d2.dataFormatada());
 
     }
 }
