@@ -285,5 +285,11 @@ Sem os parênteses, se tornam atributos. Estará **apenas acessando** o dado, um
 
 
 
-Ex.:
+Ex.: 
+
+int dia;
+
+int mes;
+
+int ano;
 
