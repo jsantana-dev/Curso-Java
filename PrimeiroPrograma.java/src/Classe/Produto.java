@@ -6,9 +6,19 @@ public class Produto {
     double preco;
     double desconto;
 
-    //pode ser usado também os parâmetros que ficam dentro dos ()
-    //mas só ficaria acessível ao chamar o metodo precoComDesconto
+    Produto(String nomeInicial) {
+        nome = nomeInicial;
+    }
+
+    Produto() {
+
+    }
+
     double precoComDesconto() {
         return preco * (1 - desconto);
+    }
+
+    double precoComDesconto(double descontoDoGerente) {
+        return preco * (1 - desconto + descontoDoGerente);
     }
 }
